@@ -1,4 +1,4 @@
-package com.mpiskorz.github.addon.conroller;
+package com.mpiskorz.github.addon.api;
 
 
 import com.mpiskorz.github.addon.model.User;
