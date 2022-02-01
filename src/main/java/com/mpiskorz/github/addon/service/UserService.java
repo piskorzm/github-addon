@@ -7,17 +7,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    private GithubService githubService;
-    private LoginService loginService;
+    private final GithubService githubService;
+    private final LoginService loginService;
 
     @Autowired
     public UserService(GithubService githubService, LoginService loginService) {
         this.githubService = githubService;
         this.loginService = loginService;
-    }
-
-    public UserService(GithubService githubService) {
-        this.githubService = githubService;
     }
 
     public User getUser(String login) {

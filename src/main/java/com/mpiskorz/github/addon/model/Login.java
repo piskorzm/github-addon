@@ -1,7 +1,5 @@
 package com.mpiskorz.github.addon.model;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 
 @Entity(name = "Login")

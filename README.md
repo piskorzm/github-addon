@@ -40,6 +40,7 @@ mvn test
 You can also use your IDE.
 
 ##How to access the database?
+
 This project uses an in memory H2 database.\
 Download and install H2 console: http://www.h2database.com/html/download.html \
 To open the console run the project and go to: http://127.0.0.1:8080/h2-console \

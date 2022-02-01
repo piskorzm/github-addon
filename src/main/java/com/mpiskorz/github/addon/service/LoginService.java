@@ -10,9 +10,9 @@ import java.util.Optional;
 @Service
 public class LoginService {
 
-    @Autowired
-    private LoginRepository loginRepository;
+    private final LoginRepository loginRepository;
 
+    @Autowired
     public LoginService(LoginRepository loginRepository) {
         this.loginRepository = loginRepository;
     }
@@ -30,6 +30,5 @@ public class LoginService {
         }
 
         this.loginRepository.save(login);
-
     }
 }
